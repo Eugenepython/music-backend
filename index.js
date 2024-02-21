@@ -6,7 +6,7 @@ import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
 
 const app = express();
-const port = 3001;
+const port = process.env.PORT || 3001;
 console.log("hello")
 app.use(bodyParser.json());
 dotenv.config();
